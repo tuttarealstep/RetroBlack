@@ -1,0 +1,297 @@
+//Buttons
+.button {
+  display: inline-block;
+  font-weight: $_buttons_font_weight;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  touch-action: manipulation;
+  margin-bottom: 0;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  height: 22px;
+  font-family: $_font_family_g;
+  text-decoration: none;
+  @include button_size($_padding_vertical, $_padding_horizontal, $font_size_default, $line_height_default, $_button_radius_default);
+
+  &,
+  &:hover,
+  &:focus,
+  &.focus {
+    color: #232323;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    @include opacity(.65);
+    @include box-shadow(none);
+  }
+
+}
+
+a.button {
+
+  padding-top: 2px;
+
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none;
+  }
+}
+
+//Button Types
+
+.button-normal
+{
+  @include button-variant(#232323, #ffffff, #bbb);
+}
+
+.button-default
+{
+  @include button-variant($button_default_color, $button_default_bg, $button_default_border);
+}
+
+.button-red
+{
+  @include button-variant($button_red_color, $button_red_bg, $button_red_border);
+}
+
+.button-green
+{
+  @include button-variant($button_green_color, $button_green_bg, $button_green_border);
+}
+
+.button-blue
+{
+  @include button-variant($button_blue_color, $button_blue_bg, $button_blue_border);
+}
+
+.button-orange
+{
+  @include button-variant($button_orange_color, $button_orange_bg, $button_orange_border);
+}
+
+.button-yellow
+{
+  @include button-variant($button_yellow_color, $button_yellow_bg, $button_yellow_border);
+}
+
+//White buttons
+
+.white-button-default
+{
+  @include button-variant(#232323, #ffffff, $button_default_border);
+}
+
+.white-button-red
+{
+  @include button-variant(#232323, #ffffff, $button_red_border);
+}
+
+.white-button-green
+{
+  @include button-variant(#232323, #ffffff, $button_green_border);
+}
+
+.white-button-blue
+{
+  @include button-variant(#232323, #ffffff, $button_blue_border);
+}
+.white-button-orange
+{
+  @include button-variant(#232323, #ffffff, $button_orange_border);
+}
+
+.button-clear
+{
+  @include button-variant(#ffffff, transparent, transparent);
+}
+
+.button-clear-white
+{
+  @include button-variant(#fff, transparent, #fff);
+}
+
+.button-clear-blue
+{
+  @include button-variant($_blue, transparent, $_blue);
+}
+
+.button-clear-red
+{
+  @include button-variant($_red, transparent, $_red);
+}
+
+.button-clear-green
+{
+  @include button-variant($_green, transparent, $_green);
+}
+
+.button-clear-yellow
+{
+  @include button-variant($_yellow, transparent, $_yellow);
+}
+
+.button-clear-orange
+{
+  @include button-variant($_orange, transparent, $_orange);
+}
+
+.button-clear-cyan
+{
+  @include button-variant($_cyan, transparent, $_cyan);
+}
+
+.white-button-clear
+{
+  @include button-variant(#232323, transparent, transparent);
+}
+//Button size
+
+.button-extra-small {
+  @include button_size($_button_padding_extra_small_vertical, $_button_padding_extra_small_horizontal, 12px, 1.5, 3px);
+  height: 100%;
+}
+
+.button-small {
+  @include button_size($_button_padding_small_vertical, $_button_padding_small_horizontal, 85%, $line_height_default, $_button_radius_default);
+}
+
+.button-large {
+  @include button_size($_button_padding_large_vertical, $_button_padding_large_horizontal, 38px, $line_height_default, $_button_radius_default);
+  height: 52px;
+}
+
+.button-extra-large {
+  @include button_size($_button_padding_extra_large_vertical, $_button_padding_extra_large_horizontal, 52px, 1.2em, $_button_radius_default);
+  height: 62px;
+}
+
+//Full width buttons
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.button-block + .button-block {
+  margin-top: 5px;
+}
+
+.no-radius, .button-square
+{
+  @include border-radius(0);
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.button-block {
+    width: 100%;
+  }
+}
+
+.full-height {
+  height: 100%;
+}
+
+.blockquote, blockquote {
+  border-left: .3rem solid $_white;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem;
+}
+
+.blockquote *:last-child, blockquote *:last-child {
+  margin: 0;
+}
+
+.blockquote-red {
+  border-left: .3rem solid $_red;
+}
+
+.blockquote-green {
+  border-left: .3rem solid $_green;
+}
+
+.blockquote-yellow {
+  border-left: .3rem solid $_yellow;
+}
+
+.blockquote-orange {
+  border-left: .3rem solid $_orange;
+}
+
+.blockquote-blue {
+  border-left: .3rem solid $_blue;
+}
+
+.blockquote-black {
+  border-left: .3rem solid $_black;
+}
+
+.blockquote-cyan {
+  border-left: .3rem solid $_cyan;
+}
+
+.code
+{
+
+}
+
+
+.box {
+  border: 1px solid #fff;
+  padding: 1rem;
+
+  &.is-green {
+    @include box-variant($_green);
+  }
+
+  &.is-red {
+    @include box-variant($_red);
+  }
+
+  &.is-yellow {
+    @include box-variant($_yellow);
+  }
+
+  &.is-orange {
+      @include box-variant($_orange);
+  }
+
+  &.is-blue {
+    @include box-variant($_blue);
+  }
+
+  &.is-cyan {
+    @include box-variant($_cyan);
+  }
+}
+
+//Only WebKit
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+.is-90s
+{
+  font-family: 'Permanent Marker', cursive;
+  background-image: -webkit-gradient(linear,  left top, left bottom,  from(#FF0FF8),  to(#F9F9F7));
+  background-image: -webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+  background-image: -o-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+  background-image: linear-gradient(#FF0FF8 0%,  #F9F9F7 100%);
+  -webkit-filter: drop-shadow(2px 2px 20px $_red);
+  filter: drop-shadow(2px 2px 8px $_red);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

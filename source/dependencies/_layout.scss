@@ -1,0 +1,120 @@
+// For table structure
+.row:after {
+  clear: both;
+}
+
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+
+.grid {
+  overflow: hidden;
+  width: $_max_content_width;
+  margin-right: auto;
+}
+
+%base_grid_style {
+  float: left;
+  margin-right: $_margin_b_columns;
+}
+
+@for $i from 1 through $_max_grid_columns {
+    .column-#{$i} {
+      @extend %base_grid_style;
+      width: ((100% / $_max_grid_columns) * $i) - $_margin_b_columns * 2;
+    }
+}
+
+@media only screen and (max-width: $_max_content_width)
+{
+  .grid {
+    width:100%;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px)
+{
+  .grid {width:100%;}
+  @for $i from 1 through $_max_grid_columns {
+    .column-#{$i} {
+      width: 100%;
+      margin-right: auto;
+    }
+  }
+}
+
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.row
+{
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 20px;
+}
+
+.container-full > .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container > .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.colorize_columns [class*="column-"] {
+  padding: 15px;
+  background-color: #e6e6e6;
+  background-color: rgba(179, 179, 179, 0.35);
+  border: 1px solid rgba(154, 154, 154, 0.2);
+}
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-full {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+[class*="column-"]
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

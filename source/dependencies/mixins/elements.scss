@@ -1,0 +1,84 @@
+//Buttons
+@mixin button_size($padding_v, $padding_h, $font_size, $line_height, $border_radius) {
+  padding: $padding_v $padding_h;
+  font-size: $font_size;
+  line-height: $line_height;
+  border-radius: $border_radius;
+}
+
+@mixin box-shadow ($boxShadow){
+  -moz-box-shadow: $boxShadow;
+  -webkit-box-shadow: $boxShadow;
+  -ms-box-shadow: $boxShadow;
+  -o-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+}
+
+@mixin opacity($opacity){
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity}*10)";
+  filter: alpha(opacity=#{$opacity * 100});
+  -moz-opacity: $opacity;
+  -khtml-opacity: $opacity;
+  opacity: $opacity;
+}
+
+//From bootstrap
+// https://getbootstrap.com/
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 25%);
+  }
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+      border-color: darken($border, 25%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+      border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+@mixin box-variant($color)
+{
+  color: $color;
+  border-color: $color;
+}

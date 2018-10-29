@@ -1,0 +1,57 @@
+//From
+.form-block //Label & element
+{
+  margin-bottom: 14px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 4px;
+  font-weight: 800;
+}
+
+.form-element{
+  font-family: $_font_family_g;
+  display: block;
+  width: 100%;
+  height: 22px;
+  padding: 0px 5px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #656565;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.minimal-form-element {
+
+  font-family: $_font_family_g;
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 6px 5px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #D1D1D1;
+  outline: none;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.help-text {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  display: block;
+  color: #656565;
+}

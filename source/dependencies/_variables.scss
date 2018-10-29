@@ -1,0 +1,62 @@
+//Default Colors
+$_green: #4caf50;
+$_yellow: #ffeb3b;
+$_orange: #ff5722;
+$_red: #e91e63;
+$_blue_default: #42a5f5;
+$_blue: #3f51b5;
+$_white: #ffffff;
+$_black: #000000;
+$_cyan: #00bcd4;
+$button_default_color: $_white;
+$button_default_bg: $_blue_default;
+$button_default_border: darken($button_default_bg, 5%);
+$button_green_color: $_white;
+$button_green_bg: $_green;
+$button_green_border: darken($button_green_bg, 5%);
+$button_red_color: $_white;
+$button_red_bg: $_red;
+$button_red_border: darken($button_red_bg, 5%);
+$button_orange_color: $_white;
+$button_orange_bg: $_orange;
+$button_orange_border: darken($button_orange_bg, 5%);
+$button_blue_color: $_white;
+$button_blue_bg: $_blue;
+$button_blue_border: darken($_blue, 5%);
+
+$button_yellow_color: $_black;
+$button_yellow_bg: $_yellow;
+$button_yellow_border: darken($_yellow, 5%);
+
+//Spacing
+$_max_content_width: 1000px; //max width
+$_max_grid_columns: 12;
+
+//max columns
+$_margin_b_columns: 0.000003%;
+
+//Margin between columns
+//HTML Elements
+$_link_color: $_blue;
+$_link_hover_color: lighten($_blue, 20%);
+$_font_family_g: Menlo, Monaco, Lucida Console ,Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+//Size & weight & padding
+$font_size_default: 14px;
+$line_height_default: 1.4em;
+$_buttons_font_weight: 400; //With $_font_family_g
+$_button_radius_default: 0;
+$_padding_vertical: 0;
+$_padding_horizontal: 30px;
+
+//Buttons size
+$_button_padding_extra_large_vertical: 0;
+$_button_padding_extra_large_horizontal: 60px;
+
+$_button_padding_large_vertical: 0;
+$_button_padding_large_horizontal: 40px;
+
+$_button_padding_small_vertical: 0px;
+$_button_padding_small_horizontal: 4px;
+
+$_button_padding_extra_small_vertical: 0px;
+$_button_padding_extra_small_horizontal: 0px;
