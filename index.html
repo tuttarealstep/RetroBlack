@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Stefano Valenzano">
+    <meta name="description" content="Minimal css framework.">
+    <title>RetroBlack</title>
+
+    <!-- Link to RetroBlack -->
+    <link rel="stylesheet" type="text/css" href="retroblack.css" />
+
+    <!-- Link to Web Site CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+<div class="menu_button">
+    <span class="top bar"></span>
+    <span class="bottom bar"></span>
+</div>
+<section id="home">
+    <div class="container text-center">
+        <div class="row">
+            <div class="screen-center">
+                <h1 class="retroblack-title is-90s">RetroBlack</h1>
+                <h4 class="is-cyan">Minimal css framework</h4>
+                <br>
+                <a class="button button-clear-cyan scroll" href="#documentation">Download RetroBlack</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="screen-center text-right">
+                <ul>
+                    <li><a href="#home" class="menu_click scroll"><h1 class="b_h1 is-cyan">Home</h1></a></li>
+                    <li><a href="#documentation" class="menu_click scroll"><h1 class="b_h1 is-cyan">Documentation</h1></a>
+                        <ul class="sub_menu">
+                            <li><a href="#download" class="menu_click scroll">Download</a></li>
+                            <li><a href="#source_code" class="menu_click scroll">Source Code</a></li>
+                            <li><a href="#grid" class="menu_click scroll">Grid</a></li>
+                            <li><a href="#typography" class="menu_click scroll">Typography</a></li>
+                            <li><a href="#buttons" class="menu_click scroll">Buttons</a></li>
+                            <li><a href="#blockquote" class="smenu_click croll">Blockquote</a></li>
+                            <li><a href="#forms" class="menu_click scroll">Forms</a></li>
+                            <li><a href="#box" class="menu_click scroll">Box</a></li>
+                            <li><a href="#utilities" class="menu_click scroll">Utilities</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about" class="menu_click scroll"><h1 class="b_h1 is-cyan">About</h1></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="documentation">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="b_h1 is-red is-90s">Documentation</h1>
+            <h5 class="is-cyan">How use RetroBlack.</h5>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h3 class="b_h1 is-cyan" id="download">DOWNLOAD</h3>
+                <a href="https://github.com/tuttarealstep/FutureCSS/releases" class="button button-clear-red">Download RetroBlack</a>
+                <br>
+                <br>
+                <h4 class="b_h1 is-cyan">Or include from RetroBlack website</h4>
+                <p>Add this to your <code>&lt;head&gt;</code>:
+                    <br><br>
+                <pre> <code>&lt;link rel="stylesheet" type="text/css" href="https://tuttarealstep.github.io/FutureCSS/dist/future.min.css"/&gt;</code></pre></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-2"></div>
+            <div class="column-8 colorize_columns">
+                <h3 class="b_h1 is-cyan" id="grid">GRID</h3>
+                <p>RetroBlack include a fluid grid system. The grid have <b>12 column</b>.</p>
+                <div class="row">
+                    <div class="column-1">one</div>
+                    <div class="column-2">two</div>
+                    <div class="column-3">three</div>
+                </div>
+                <div class="row">
+                    <div class="column-3">three</div>
+                    <div class="column-3">three</div>
+                    <div class="column-3">three</div>
+                </div>
+                <div class="row">
+                    <div class="column-4">four</div>
+                    <div class="column-4">four</div>
+                    <div class="column-4">four</div>
+                </div>
+                <div class="row">
+                    <div class="column-3">three</div>
+                    <div class="column-6">six
+                        <div class="row">
+                            <div class="column-3">three</div>
+                        </div>
+                    </div>
+                    <div class="column-3">three</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-12">twelve</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-1">one</div>
+                    <div class="column-11">eleven</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-2">two</div>
+                    <div class="column-10">one</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-3">three</div>
+                    <div class="column-9">nine</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-4">four</div>
+                    <div class="column-8">eight</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-5">five</div>
+                    <div class="column-7">seven</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-6">six</div>
+                    <div class="column-6">six</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-7">seven</div>
+                    <div class="column-5">five</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-8">eight</div>
+                    <div class="column-4">four</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-9">nine</div>
+                    <div class="column-3">three</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-10">one</div>
+                    <div class="column-2">two</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-11">eleven</div>
+                    <div class="column-1">one</div>
+                </div>
+
+                <div class="row">
+                    <div class="column-12">twelve</div>
+                </div>
+                <br>
+
+                <ul>
+                    <li>The grid system is like the <a href="http://getbootstrap.com/">bootstrap</a> system. It have rows and columns, rows are used for create horizontal groups of columns.</li>
+                    <li>Rows  must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) or <code>.container-full</code> (full-width, full-height) for proper alignment and padding.</li>
+                </ul>
+                <br>
+                <pre>
+                <code>
+&lt;div class="container"&gt;
+    &lt;!-- For each row, give the class "row" --&gt;
+    &lt;div class="row"&gt;
+         &lt;!-- for columns, add the class column-x, replace x with a number from 1 to 12 --&gt;
+            &lt;div class="column-6"&gt;six&lt;/div&gt;
+            &lt;div class="column-6"&gt;six&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column-2"></div>
+            <div class="column-8 colorize_columns">
+                <h3 class="b_h1 is-cyan" id="typography">TYPOGRAPHY</h3>
+                <h1>h1 RetroBlack heading</h1>
+                <h2>h2 RetroBlack heading</h2>
+                <h3>h3 RetroBlack heading</h3>
+                <h4>h4 RetroBlack heading</h4>
+                <h5>h5 RetroBlack heading</h5>
+                <h6>h6 RetroBlack heading</h6>
+                <strong>Bold</strong>
+                <em>Italic</em>
+                <a href="#">Links</a>
+                <u>underline</u>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis porta libero. Mauris elementum rutrum massa sit amet vestibulum. In hac habitasse platea dictumst. Maecenas ac aliquet quam, vitae egestas dui. Donec varius nec leo condimentum
+                    varius.</p>
+                <p class="is-90s">90s Style</p>
+                <br>
+                <pre>
+                    <code>
+&lt;!-- headings --&gt;
+&lt;h1&gt;h1 RetroBlack heading&lt;/h1&gt;
+&lt;h2&gt;h2 RetroBlack heading&lt;/h2&gt;
+&lt;h3&gt;h3 RetroBlack heading&lt;/h3&gt;
+&lt;h4&gt;h4 RetroBlack heading&lt;/h4&gt;
+&lt;h5&gt;h5 RetroBlack heading&lt;/h5&gt;
+&lt;h6&gt;h6 RetroBlack heading&lt;/h6&gt;
+
+&lt;!-- styles --&gt;
+&lt;strong&gt;Bold&lt;/strong&gt;
+&lt;em&gt;Italic&lt;/em&gt;
+&lt;a href=&quot;#&quot;&gt;Links&lt;/a&gt;
+&lt;u&gt;underline&lt;/u&gt;
+
+&lt;!-- paragraph --&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis porta libero. Mauris elementum rutrum massa sit amet vestibulum. In hac habitasse platea dictumst. Maecenas ac aliquet quam, vitae egestas dui. Donec varius nec leo condimentum varius.&lt;/p&gt;
+
+&lt;!-- 90s Style --&gt;
+&lt;p class=&quot;is-90s&quot;&gt;90s Style&lt;/p&gt;</code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column-2"></div>
+            <div class="column-8 colorize_columns">
+                <h3 class="b_h1 is-cyan" id="buttons">BUTTONS</h3>
+                <p>RetroBlack come with a large number of buttons with many styles and classes.</p>
+                <p>You can use button classes on <code>&lt;button&gt;</code>,<code>&lt;input&gt;</code> and <code>&lt;a&gt;</code>.</p>
+                <div class="row aligned_row">
+                    <input type="submit" class="button button-default" value="Submit">
+                    <input type="button" class="button button-default" value="Input">
+                    <a class="button button-default" href="#" role="button">Link</a>
+                    <button class="button button-default" type="submit">Button</button>
+                </div>
+                <pre>
+                    <code>
+&lt;input type=&quot;submit&quot; class=&quot;button button-default&quot; value=&quot;Submit&quot;&gt;
+&lt;input type=&quot;button&quot; class=&quot;button button-default&quot; value=&quot;Input&quot;&gt;
+&lt;a class=&quot;button button-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
+&lt;button class=&quot;button button-default&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+                    </code>
+                </pre>
+                <h4 class="is-cyan">Others styles</h4>
+                <div class="row aligned_row ">
+                    <input type="submit" class="button" value="only button class">
+                    <input type="submit" class="button button-normal" value="normal">
+                    <input type="submit" class="button button-default" value="default">
+                </div>
+                <div class="row aligned_row">
+                    <input type="submit" class="button button-red" value="red">
+                    <input type="submit" class="button button-green" value="green">
+                    <input type="submit" class="button button-blue" value="blue">
+                    <input type="submit" class="button button-orange" value="orange">
+                    <input type="submit" class="button button-yellow" value="yellow">
+                </div>
+                <div class="row aligned_row">
+                    <input type="submit" class="button button-clear" value="clear">
+                </div>
+                <pre>
+                <code>
+&lt;!-- only button class --&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;only button class&quot;&gt;
+
+&lt;!-- normal button --&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button button-normal&quot; value=&quot;normal&quot;&gt;
+
+&lt;!-- normal button --&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button button-default&quot; value=&quot;default&quot;&gt;
+
+&lt;!-- red button --&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button button-red&quot; value=&quot;red&quot;&gt;
+
+&lt;!-- green button --&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button button-green&quot; value=&quot;green&quot;&gt;
+
+&lt;!-- blue button --&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button button-blue&quot; value=&quot;blue&quot;&gt;
+
+&lt;!-- orange button --&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button button-orange&quot; value=&quot;orange&quot;&gt;
+
+&lt;!-- clear button --&gt;
+&lt;input type=&quot;submit&quot; class=&quot;button button-clear&quot; value=&quot;clear&quot;&gt;
+                </code>
+                </pre>
+
+                <h4 class="is-cyan">Sizes</h4>
+                <p>You want smaller or larger buttons? Its simply add these classes: <br> <code>.button-extra-small</code>, <code>.button-small</code>, <code>.button-large</code> or <code>.button-extra-large</code></p>
+                <p>
+                    <input type="submit" class="button button-normal button-extra-small" value="extra small">
+                </p>
+                <p>
+                    <input type="submit" class="button button-default button-small" value="small">
+                </p>
+                <p>
+                    <input type="submit" class="button button-red " value="default">
+                </p>
+                <p>
+                    <input type="submit" class="button button-green button-large" value="large">
+                </p>
+                <p>
+                    <input type="submit" class="button button-blue button-extra-large" value="extra large">
+                </p>
+                <pre>
+                    <code>
+&lt;p&gt;
+   &lt;input type=&quot;submit&quot; class=&quot;button button-normal button-extra-small&quot; value=&quot;extra small&quot;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+   &lt;input type=&quot;submit&quot; class=&quot;button button-default button-small&quot; value=&quot;small&quot;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;input type=&quot;submit&quot; class=&quot;button button-red &quot; value=&quot;default&quot;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;input type=&quot;submit&quot; class=&quot;button button-green button-large&quot; value=&quot;large&quot;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;input type=&quot;submit&quot; class=&quot;button button-blue button-extra-large&quot; value=&quot;extra large&quot;&gt;
+&lt;/p&gt;
+                    </code>
+                </pre>
+<br>
+                <p>If you like a large button with the full width of its parent add this class:<code>.button-block</code></p>
+                <input type="submit" class="button button-normal button-block" value="button-block">
+                <input type="submit" class="button button-default  button-block" value="button-block">
+                <br>
+                <pre>
+                    <code>
+&lt;input type=&quot;submit&quot; class=&quot;button button-normal button-block&quot; value=&quot;button-block&quot;&gt;
+
+&lt;input type=&quot;submit&quot; class=&quot;button button-default  button-block&quot; value=&quot;button-block&quot;&gt;
+                    </code>
+                </pre>
+                <br>
+                <p>You can also add an <code>.active</code> and <code>.disabled</code> state to the button.</p>
+                <p>
+                    <input type="submit" class="button button-normal active" value="active">
+                    <input type="submit" class="button button-default  active" value="active">
+                </p>
+                <p>
+                    <input type="submit" class="button button-normal disabled" value="disabled">
+                    <input type="submit" class="button button-default  disabled" value="disabled">
+                </p>
+                <br>
+                <pre>
+                <code>
+&lt;input type=&quot;submit&quot; class=&quot;button button-normal active&quot; value=&quot;active&quot;&gt;
+
+&lt;input type=&quot;submit&quot; class=&quot;button button-default active&quot; value=&quot;active&quot;&gt;
+
+&lt;input type=&quot;submit&quot; class=&quot;button button-normal disabled&quot; value=&quot;disabled&quot;&gt;
+
+&lt;input type=&quot;submit&quot; class=&quot;button button-default disabled&quot; value=&quot;disabled&quot;&gt;
+
+
+                </code>
+                </pre>
+                <br>
+                <p>There are also some white buttons. These buttons have the same classes as the colored buttons but with a <code>white-</code> prefix before the colored button class.</p>
+                <p>Before:<code>.button-default</code> and After:<code>.white-button-default</code></p>
+                <p>
+                    <input type="submit" class="button white-button-default" value="white default">
+                </p>
+                <p>
+                    <input type="submit" class="button white-button-red" value="white red">
+                    <input type="submit" class="button white-button-green" value="white green">
+                </p>
+                <p>
+                    <input type="submit" class="button white-button-blue" value="white blue">
+                    <input type="submit" class="button white-button-orange" value="white orange">
+                </p>
+                <br>
+                <p>There are also some <span class="is-90s">AWESOME</span> clear buttons.</p>
+                <p>
+                    <input type="submit" class="button button-clear-white" value="clear white">
+                </p>
+                <p>
+                    <input type="submit" class="button button-clear-blue" value="clear blue">
+                    <input type="submit" class="button button-clear-cyan" value="clear cyan">
+                </p>
+                <p>
+                    <input type="submit" class="button button-clear-red" value="clear red">
+                    <input type="submit" class="button button-clear-orange" value="clear orange">
+                </p>
+                <p>
+                    <input type="submit" class="button button-clear-green" value="clear green">
+                    <input type="submit" class="button button-clear-yellow" value="clear yellow">
+                </p>
+                <br>
+                <pre>
+                <code>
+&lt;p&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;button button-clear-white&quot; value=&quot;clear white&quot;&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;button button-clear-blue&quot; value=&quot;clear blue&quot;&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;button button-clear-cyan&quot; value=&quot;clear cyan&quot;&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;button button-clear-red&quot; value=&quot;clear red&quot;&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;button button-clear-orange&quot; value=&quot;clear orange&quot;&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;button button-clear-green&quot; value=&quot;clear green&quot;&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;button button-clear-yellow&quot; value=&quot;clear yellow&quot;&gt;
+&lt;/p&gt;</code>
+                </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-2"></div>
+            <div class="column-8">
+                <h3 class="b_h1 is-cyan" id="blockquote">Blockquote</h3>
+                <p>Blockquote are used to quote something, bring out the text compared to everything else.</p>
+                <blockquote>
+                    <p><em>RetroBlack is amazing!</em></p>
+                </blockquote>
+
+                <blockquote class="blockquote-green">
+                    <p><em>RetroBlack is amazing!</em></p>
+                </blockquote>
+
+                <blockquote class="blockquote-yellow">
+                    <p><em>RetroBlack is amazing!</em></p>
+                </blockquote>
+
+                <blockquote class="blockquote-orange">
+                    <p><em>RetroBlack is amazing!</em></p>
+                </blockquote>
+
+                <blockquote class="blockquote-red">
+                    <p><em>RetroBlack is amazing!</em></p>
+                </blockquote>
+
+                <blockquote class="blockquote-blue">
+                    <p><em>RetroBlack is amazing!</em></p>
+                </blockquote>
+
+                <blockquote class="blockquote-black">
+                    <p><em>RetroBlack is amazing!</em></p>
+                </blockquote>
+
+                <blockquote class="blockquote-cyan">
+                    <p><em>RetroBlack is amazing!</em></p>
+                </blockquote>
+                <br>
+                <pre>
+                    <code>
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;RetroBlack is amazing!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote-green&quot;&gt;
+&lt;p&gt;&lt;em&gt;RetroBlack is amazing!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote-yellow&quot;&gt;
+&lt;p&gt;&lt;em&gt;RetroBlack is amazing!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote-orange&quot;&gt;
+&lt;p&gt;&lt;em&gt;RetroBlack is amazing!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote-red&quot;&gt;
+&lt;p&gt;&lt;em&gt;RetroBlack is amazing!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote-blue&quot;&gt;
+&lt;p&gt;&lt;em&gt;RetroBlack is amazing!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote-black&quot;&gt;
+&lt;p&gt;&lt;em&gt;RetroBlack is amazing!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote-cyan&quot;&gt;
+&lt;p&gt;&lt;em&gt;RetroBlack is amazing!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-2"></div>
+            <div class="column-8">
+                <h3 class="b_h1 is-cyan" id="forms">Forms</h3>
+                <blockquote class="blockquote-red">
+                    <p>Forms are pretty difficult to organize and style. But RetroBlack can help you with its classes.</p>
+                </blockquote>
+                <br>
+                <p>You can define some <code>.form-block</code> a group of label and input. They help you with the space.</p>
+                <p>For every text input or selection, if you add the <code>.form-element</code> class it become with a beautiful style.</p>
+                <form>
+                    <div class="form-block">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-element" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-block">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-element" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-block">
+                        <label for="file">Load File</label>
+                        <input type="file" id="file">
+                        <p class="help-text">Help text.</p>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Check box
+                        </label>
+                    </div>
+                    <div class="form-block">
+                        <label for="state">State</label>
+                        <select id="state" class="form-element">
+                            <option>AL</option>
+                            <option>CA</option>
+                            <option>IL</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="button button-normal">Send</button>
+                    <button type="reset" class="button white-button-red">Reset</button>
+                </form>
+                <br>
+                <pre>
+                    <code>
+&lt;form&gt;
+    &lt;div class=&quot;form-block&quot;&gt;
+        &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;form-element&quot; id=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-block&quot;&gt;
+        &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+        &lt;input type=&quot;password&quot; class=&quot;form-element&quot; id=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-block&quot;&gt;
+        &lt;label for=&quot;file&quot;&gt;Load File&lt;/label&gt;
+        &lt;input type=&quot;file&quot; id=&quot;file&quot;&gt;
+        &lt;p class=&quot;help-text&quot;&gt;Help text.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;checkbox&quot;&gt;
+        &lt;label&gt;
+            &lt;input type=&quot;checkbox&quot;&gt; Check box
+        &lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-block&quot;&gt;
+        &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
+        &lt;select id=&quot;state&quot; class=&quot;form-element&quot;&gt;
+            &lt;option&gt;AL&lt;/option&gt;
+            &lt;option&gt;CA&lt;/option&gt;
+            &lt;option&gt;IL&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;button type=&quot;submit&quot; class=&quot;button button-normal&quot;&gt;Send&lt;/button&gt;
+    &lt;button type=&quot;reset&quot; class=&quot;button white-button-red&quot;&gt;Reset&lt;/button&gt;
+&lt;/form&gt;
+                    </code>
+                </pre>
+                <br>
+                <br>
+                But if you like a minimal style for your <code>.form-element</code>,<br>simply replace:<code>.form-element</code> class with this:<code>.minimal-form-element</code>.
+                <form>
+                    <div class="form-block">
+                        <input type="email" class="minimal-form-element" id="m-email" placeholder="Email">
+                    </div>
+                    <div class="form-block">
+                        <input type="password" class="minimal-form-element" id="m-password" placeholder="Password">
+                    </div>
+                    <div class="form-block">
+                        <label for="m-state">State</label>
+                        <select id="m-state" class="minimal-form-element">
+                            <option>AL</option>
+                            <option>CA</option>
+                            <option>IL</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="button button-normal">Send</button>
+                    <button type="reset" class="button white-button-red">Reset</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-2"></div>
+            <div class="column-8">
+                <h3 class="b_h1 is-cyan" id="box">Box</h3>
+                <div class="box">
+                    Box default
+                </div>
+                <br>
+                <div class="box is-cyan">
+                    Box is-cyan
+                </div>
+                <br>
+                <div class="box is-blue">
+                    Box is-blue
+                </div>
+                <br>
+                <div class="box is-green">
+                    Box is-green
+                </div>
+                <br>
+                <div class="box is-red">
+                    Box is-red
+                </div>
+                <br>
+                <div class="box is-orange">
+                    Box is-orange
+                </div>
+                <br>
+                <div class="box is-yellow">
+                    Box is-yellow
+                </div>
+                <br>
+                <pre>
+                    <code>
+&lt;div class=&quot;box&quot;&gt;
+    Box default
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;box is-cyan&quot;&gt;
+    Box is-cyan
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;box is-blue&quot;&gt;
+    Box is-blue
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;box is-green&quot;&gt;
+    Box is-green
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;box is-red&quot;&gt;
+    Box is-red
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;box is-orange&quot;&gt;
+    Box is-orange
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class=&quot;box is-yellow&quot;&gt;
+    Box is-yellow
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-2"></div>
+            <div class="column-8">
+                <h3 class="b_h1 is-cyan" id="utilities">Utilities</h3>
+                <blockquote class="blockquote-red">
+                    <p>RetroBlack have some utilities class, for help you with the text, align...</p>
+                </blockquote>
+                <br>
+                <pre>
+                    <code>
+&lt;!-- Pulls element to the right --&gt;
+&lt;div class=&quot;float_right&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Pulls element to the left --&gt;
+&lt;div class=&quot;float_left&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Makes the text aligned center --&gt;
+&lt;div class=&quot;text-center&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Makes the text aligned left --&gt;
+&lt;div class=&quot;text-left&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Makes the text aligned right --&gt;
+&lt;div class=&quot;text-right&quot;&gt;&lt;/div&gt;
+
+&lt;!-- justify the text --&gt;
+&lt;div class=&quot;text-justify&quot;&gt;&lt;/div&gt;
+
+&lt;!-- capitalize the text --&gt;
+&lt;div class=&quot;text-capitalize&quot;&gt;&lt;/div&gt;
+
+&lt;!-- make the text uppercase --&gt;
+&lt;div class=&quot;text-uppercase&quot;&gt;&lt;/div&gt;
+
+&lt;!-- no wrap the text --&gt;
+&lt;div class=&quot;text-nowrap&quot;&gt;&lt;/div&gt;
+
+&lt;!-- make the text small --&gt;
+&lt;div class=&quot;text-small&quot;&gt;&lt;/div&gt;
+                    </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="column-2"></div>
+                <div class="column-8">
+                    <h2 class="b_h1 is-90s text-center">About</h2>
+                    <div class="row aligned_row">
+                        <div class="column-4">
+                            <h3 class="b_h1 is-red">Browser Support</h3>
+                            <ul>
+                                <li>Chrome</li>
+                                <li>IE 9+</li>
+                                <li>Edge</li>
+                                <li>Firefox</li>
+                                <li>Opera</li>
+                                <li>Safari</li>
+                                <li>Edge</li>
+                            </ul>
+                        </div>
+                        <div class="column-4">
+                            <h3 class="b_h1 is-red">Lightweight</h3>
+                            <p>RetroBlack have very many things with a very small size. Only <b>34kb</b>!</p>
+                            <h3 class="b_h1 is-red">Open Source</h3>
+                            <p>You can access to the source <a href="https://github.com/tuttarealstep/RetroBlack" target="_blank">Here</a>. Know how it's made behind and make your edit!</p>
+                        </div>
+                        <div class="column-4">
+                            <h3 class="b_h1 is-red">Mobile Friendly</h3>
+                            <p>RetroBlack is responsive and make your website mobile-friendly. Instead of many words, <b>try resizing your browser!</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-4"></div>
+                <div class="column-4">
+                    <h2 class="b_h1 is-red">Thanks for the visit :)</h2>
+                    <p>Thanks for visiting and checking out RetroBlack.</p>
+                    <p>If you find issues plase submit it <a href="https://github.com/tuttarealstep/RetroBlack/issues" target="_blank">here.</a></p>
+                    <br>
+                    <p class="float_left">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=tuttarealstep&repo=RetroBlack&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                    </p>
+                    <p class="float_right">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=tuttarealstep&repo=RetroBlack&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                    </p>
+                </div>
+            </div>
+        </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".scroll").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        $(".menu_button").click(function() {
+            $(".menu_button").toggleClass("open");
+            $(".menu").toggleClass("visible")
+        });
+
+        $(".menu_click").click(function() {
+            $(".menu_button").toggleClass("open");
+            $(".menu").toggleClass("visible")
+        })
+
+    });
+
+</script>
+</body>
+</html>
